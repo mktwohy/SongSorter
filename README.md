@@ -12,6 +12,6 @@ For each song in the directory, the program uses this getMetaData() function to 
 If an artist\album path doesn't already exist, it creates one. Finally, it moves the file to that location.
 
 During testing, I wanted a way to undo my work. 7Zip has a way of "flattening" a directory, but that takes a few minutes and a lot of mouse clicks, so I wrote flattenDirectory(). 
-This function moves every song back to the parent directory and deletes every empty folder. In hindsight, this should have been done recursively, but it works.
+This function moves every song back to the parent directory and deletes every empty folder. In hindsight, this could have been more readable if done recursively.
 
 To use it, you simply call either sortSongs(cwd) or flattenDirectory(cwd), where cwd is the address of your music folder. 
